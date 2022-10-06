@@ -20,10 +20,6 @@ class ReviewsController < ApplicationController
         end
     end
 
-    def edit
-        fail
-    end
-
     private
 
         def movie_params
