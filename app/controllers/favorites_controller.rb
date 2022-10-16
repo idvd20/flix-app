@@ -12,11 +12,11 @@ class FavoritesController < ApplicationController
         favorite = current_user.favorites.find(params[:id])
         favorite.destroy
         
-        redirect_to movie
+        redirect_to @movie
     end
 
     private
         def set_movie
-            movie = Movie.find(params[:movie_id])    
+            @movie = Movie.find(params[:movie_id])    
         end
 end
