@@ -1,8 +1,8 @@
 class Movie < ApplicationRecord
 
     before_save :set_slug
-    before_save :format_username 
-    before_save :format_email 
+    # before_save :format_username 
+    # before_save :format_email 
 
     has_many :reviews, dependent: :destroy
     has_many :favorites, dependent: :destroy
