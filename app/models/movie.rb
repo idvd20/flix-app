@@ -50,11 +50,11 @@ class Movie < ApplicationRecord
             self.slug = title.parameterize
         end
 
-        def format_username
-            self.username = username.downcase
-        end
+        # def format_username
+        #     self.username = username.downcase
+        # end
 
-        def format_email
-            self.email = email.downcase
-        end
+        # def format_email
+        #     self.email = email.downcase
+        # end
 end
