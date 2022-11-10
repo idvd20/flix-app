@@ -9,6 +9,6 @@ class Review < ApplicationRecord
   validates :stars, inclusion: {in: STARS, message: "Must be between 1 to 5"}
 
   def stars_as_percent
-    (stars * 5.0) * 100
+    (stars / 5.0) * 100
   end
 end
